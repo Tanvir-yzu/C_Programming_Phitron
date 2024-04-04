@@ -1,24 +1,34 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
 int main() {
-
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-      // Declaring variables
-    int N;
-
-    // Taking input
-    scanf("%d", &N);
-
-    // Printing numbers from 1 to N along with Yes or No
-    for (int i = 1; i <= N; i++) {
-        if (i % 5 == 0) {
-            printf("%d Yes\n", i);
-        } else {
-            printf("%d No\n", i);
-        }
+    int A, B;
+    char S;
+    
+    // Input A, S, and B
+    scanf("%d%c%d", &A, &S, &B);
+    
+    // Perform arithmetic operation based on the operator
+    switch(S) {
+        case '+':
+            printf("%d\n", A + B);
+            break;
+        case '-':
+            printf("%d\n", A - B);
+            break;
+        case '*':
+            printf("%d\n", A * B);
+            break;
+        case '/':
+            if (B == 0) {
+                printf("Error! Division by zero.\n");
+                return 1;
+            }
+            printf("%d\n", A / B);
+            break;
+        default:
+            printf("Error! Operator not recognized.\n");
+            return 1;
     }
+
     return 0;
 }
