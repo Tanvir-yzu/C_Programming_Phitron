@@ -1,0 +1,1 @@
+{"name":"Local: My_len","url":"d:\\Programming\\Phitron\\C_Programming_Phitron\\module_15.5\\My_len.c","tests":[{"id":1714586210626,"input":"hello","output":"5"},{"id":1714586264091,"input":"Tanvir","output":"6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Programming\\Phitron\\C_Programming_Phitron\\module_15.5\\My_len.c","group":"local","local":true}
